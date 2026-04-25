@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { ThemeToggle } from './ThemeToggle';
 
 export function Navbar() {
   return (
@@ -27,7 +26,6 @@ export function Navbar() {
         >
           Docs
         </NavLink>
-        <ThemeToggle />
         <ConnectButton showBalance={false} chainStatus="icon" accountStatus="address" />
       </div>
     </header>

@@ -411,7 +411,7 @@ function SpeedOption({
       className={[
         'p-2 rounded-md border text-left transition-colors',
         active
-          ? 'bg-blue-100 dark:bg-blue-950/50 border-blue-400 dark:border-blue-700 text-blue-900 dark:text-fg'
+          ? 'bg-blue-100 dark:bg-blue-950/50 border-blue-400 dark:border-blue-700 text-white dark:text-fg'
           : 'bg-input-bg/70 border-border text-fg/70 hover:border-fg/30',
       ].join(' ')}
     >

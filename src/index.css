@@ -4,18 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default = light mode. The `.dark` class on <html> swaps in dark values. */
+/* Dark-only app. The `.dark` class is added to <html> at boot in main.tsx so
+   every Tailwind `dark:` variant in component files applies. */
 :root {
-  color-scheme: light;
-  --bg: 247 247 249;
-  --panel: 255 255 255;
-  --border: 226 228 232;
-  --accent: 59 130 246;
-  --fg: 17 17 20;
-  --input-bg: 240 241 245;
-}
-
-html.dark {
   color-scheme: dark;
   --bg: 10 10 11;
   --panel: 20 20 22;
