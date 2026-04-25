@@ -1,0 +1,40 @@
+@import '@rainbow-me/rainbowkit/styles.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default = light mode. The `.dark` class on <html> swaps in dark values. */
+:root {
+  color-scheme: light;
+  --bg: 247 247 249;
+  --panel: 255 255 255;
+  --border: 226 228 232;
+  --accent: 59 130 246;
+  --fg: 17 17 20;
+  --input-bg: 240 241 245;
+}
+
+html.dark {
+  color-scheme: dark;
+  --bg: 10 10 11;
+  --panel: 20 20 22;
+  --border: 38 38 42;
+  --accent: 59 130 246;
+  --fg: 245 245 247;
+  --input-bg: 8 8 9;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
